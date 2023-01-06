@@ -1,0 +1,4 @@
+com\mycompany\sqliteloginapp\LoginScreenController.class
+module-info.class
+com\mycompany\sqliteloginapp\App.class
+com\mycompany\sqliteloginapp\MainScreenController.class

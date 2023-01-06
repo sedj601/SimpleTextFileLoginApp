@@ -1,0 +1,4 @@
+--patch-module
+com.mycompany.sqliteloginapp=_
+--add-reads
+com.mycompany.sqliteloginapp=ALL-UNNAMED

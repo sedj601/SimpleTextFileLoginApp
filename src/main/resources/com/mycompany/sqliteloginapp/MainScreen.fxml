@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.sqliteloginapp.MainScreenController">
+    <children>
+        <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+            <children>
+                <VBox alignment="TOP_RIGHT" prefHeight="400.0" prefWidth="256.0" style="-fx-background-color: #05071F;">
+                    <children>
+                        <StackPane alignment="BOTTOM_CENTER" maxWidth="1.7976931348623157E308" prefHeight="175.0" prefWidth="200.0">
+                            <padding>
+                                <Insets bottom="5.0" />
+                            </padding>
+                     <children>
+                        <Circle fill="DODGERBLUE" radius="75.0" stroke="BLACK" strokeType="INSIDE" />
+                        <FontIcon iconLiteral="dashicons-businessperson" iconSize="100" textOrigin="CENTER" StackPane.alignment="CENTER" />
+                     </children>
+                        </StackPane>
+                  <Label fx:id="lblUserName" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Name" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Pane prefHeight="5.0" style="-fx-background-color: #1e90ff;" />
+                        <Button alignment="CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleBtnOnActionAmazonPay" prefHeight="55.0" style="-fx-background-color: #05071F;" textFill="#e7e5e5">
+                            <graphic>
+                                <FontIcon iconColor="WHITE" iconLiteral="pf-amazon-pay" iconSize="40" />
+                            </graphic>
+                        </Button>
+                        <Button alignment="CENTER" graphicTextGap="0.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleBtnOnActionApplePay" prefHeight="55.0" style="-fx-background-color: #05071F;" textFill="#e7e5e5">
+                            <graphic>
+                                    <FontIcon iconColor="WHITE" iconLiteral="pf-apple-pay" iconSize="25" />
+                            </graphic>
+                        </Button>
+                        <Button alignment="CENTER" graphicTextGap="22.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleBtnOnActionPayPal" prefHeight="55.0" style="-fx-background-color: #05071F;" textFill="#e7e5e5">
+                            <graphic>
+                                <FontIcon iconColor="WHITE" iconLiteral="pf-paypal" iconSize="25" />
+                            </graphic>
+                        </Button>
+                        <Button alignment="CENTER" graphicTextGap="22.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleBtnOnActionVisa" prefHeight="55.0" style="-fx-background-color: #05071F;" textFill="#e7e5e5">
+                            <graphic>
+                                    <FontIcon iconColor="WHITE" iconLiteral="pf-visa" iconSize="25" />
+                            </graphic>
+                        </Button>
+                        <Button alignment="CENTER" graphicTextGap="22.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleBtnOnActionVenmo" prefHeight="55.0" style="-fx-background-color: #05071F;" textFill="#e7e5e5">
+                            <graphic>
+                                <FontIcon iconColor="WHITE" iconLiteral="pf-venmo" iconSize="25" />
+                            </graphic>
+                        </Button>
+                        <Button alignment="CENTER" graphicTextGap="22.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleBtnOnActioMasterCard" prefHeight="55.0" style="-fx-background-color: #05071F;" textFill="#e7e5e5">
+                            <graphic>
+                                <FontIcon iconColor="WHITE" iconLiteral="pf-mastercard-alt" iconSize="35" />
+                            </graphic>
+                        </Button>
+                  <Pane prefHeight="5.0" style="-fx-background-color: #1e90ff;" />
+                  <StackPane VBox.vgrow="ALWAYS">
+                     <children>
+                              <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="22.0" mnemonicParsing="false" onAction="#handleBtnOnActionSignOut" style="-fx-background-color: #1e90ff;" text="Sign Out">
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                        </Button>
+                     </children>
+                  </StackPane>
+                    </children>
+                </VBox>
+            <Pane prefWidth="5.0" style="-fx-background-color: #1e90ff;" />
+                <StackPane fx:id="spSubScene" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #02030A;" HBox.hgrow="ALWAYS" />
+            </children>
+        </HBox>
+    </children>
+</VBox>
